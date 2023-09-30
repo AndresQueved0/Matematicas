@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de unidades</title>
-</head>
-<body>
-    <script src="/Conversor de unidades/convert.js"></script>
-</body>
+<html>
+  <head>
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <h1>Unit Converter</h1>
+    <p>Enter a value to convert:</p>
+    <input type="number" id="value">
+    <p>From:</p>
+    <select id="fromUnit">
+      <option value="m">meters</option>
+      <option value="ft">feet</option>
+      <option value="km">kilometers</option>
+      <option value="mi">miles</option>
+      <option value="kg">kilograms</option>
+      <option value="lb">pounds</option>
+      <option value="g">grams</option>
+      <option value="oz">ounces</option>
+      <option value="C">Celsius</option>
+      <option value="F">Fahrenheit</option>
+      <option value="l">liters</option>
+      <option value="gal">gallons</option>
+      <option value="km/h">kilometers per hour</option>
+      <option value="mph">miles per hour</option>
+    </select>
+    <p>To:</p>
+    <select id="toUnit">
+      <option value="m">meters</option>
+      <option value="ft">feet</option>
+      <option value="km">kilometers</option>
+      <option value="mi">miles</option>
+      <option value="kg">kilograms</option>
+      <option value="lb">pounds</option>
+      <option value="g">grams</option>
+      <option value="oz">ounces</option>
+      <option value="C">Celsius</option>
+      <option value="F">Fahrenheit</option>
+      <option value="l">liters</option>
+      <option value="gal">gallons</option>
+      <option value="km/h">kilometers per hour</option>
+      <option value="mph">miles per hour</option>
+    </select>
+    <br><br>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+    <script src="convert.js"></script>
+  </body>
 </html>
